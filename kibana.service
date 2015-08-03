@@ -1,0 +1,10 @@
+[Unit]
+Description=Kibana Service
+After=network.target
+[Service]
+Type=simple
+User=kibana
+ExecStart=/var/www/kibana4/bin/kibana
+Restart=on-abort
+[Install]
+WantedBy=multi-user.target
