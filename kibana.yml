@@ -54,8 +54,8 @@ shard_timeout: 0
 verify_ssl: false
 
 # SSL for outgoing requests from the Kibana Server (PEM formatted)
-ssl_key_file: /etc/ssl/logstash.key
-ssl_cert_file: /etc/ssl/logstash.crt
+ssl_key_file: /etc/ssl/kibana4.key
+ssl_cert_file: /etc/ssl/kibana4.crt
 
 # Set the path to where you would like the process id file to be created.
 pid_file: /var/run/kibana.pid
