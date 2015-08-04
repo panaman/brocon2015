@@ -2,6 +2,9 @@
 Configs, scripts, slides from BroCon 2015
 Note: In the config files, "deathstar" is the logstash server and the elasticsearch server. "dagobah" is the logstash forwarder/Bro sensor
 
+### es_scripts
+Misc. Elasticsearch status scripts
+
 ### config.js
 Kibana 3 Config file
 

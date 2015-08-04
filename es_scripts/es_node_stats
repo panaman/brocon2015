@@ -1,0 +1,4 @@
+#!/bin/bash
+curl -XGET 'http://localhost:9200/_cat/nodes?v'
+echo ' ';
+curl -XGET 'http://localhost:9200/_cat/allocation?v'

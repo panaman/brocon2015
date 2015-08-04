@@ -1,0 +1,15 @@
+#!/usr/bin/python
+import urllib, json, pprint
+base_url = "http://localhost:9200"
+count_url = base_url + "/_count"
+jsonurl = urllib.urlopen(count_url);
+text = json.loads(jsonurl.read())
+docs = text["count"]
+
+node_url = base_url + "/_cluster/health"
+cluster = urllib.urlopen(node_url);
+text = json.loads(cluster.read())
+nodes = text["number_of_data_nodes"]
+
+print('DATA NODES: ' + str(nodes))
+print('DOC COUNT: ' + str(docs))
